@@ -44,3 +44,14 @@
     font-weight: bold;
   }
   
+  .product-image {
+    max-width: 100%; /* Ensure the image does not exceed the width of the card */
+    height: 400px; /* Keep aspect ratio of the image */
+    object-fit: cover; /* Cover the available space */
+    border-radius: 15px; /* Optional: round the corners of the image to match the card */
+  }
+  
+  .product-card.no-image {
+    align-self: flex-start;
+  }
+    
