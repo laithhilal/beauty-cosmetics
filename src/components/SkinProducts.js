@@ -8,7 +8,7 @@ const SkinProducts = () => {
       <div className="product-container">
         <h1>منتجات العناية بالبشرة</h1>
         {skinProducts.map(product => (
-        <div className={`product-card ${product.imageUrl ? '' : 'no-image'}`} key={product.id}>
+        <div className={`product-card ${product.imageUrl ? '' : 'no-image'}`} key={product.id} style={{order: product.id}}>
             {product.imageUrl && <img className="product-image" src={product.imageUrl} alt={product.name} />}
             <h2 className="product-name">{product.name}</h2>
             <p className="product-description">{product.description}</p>
