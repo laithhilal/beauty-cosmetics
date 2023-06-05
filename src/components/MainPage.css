@@ -12,7 +12,13 @@ body {
   background-repeat: no-repeat; /* Prevent the background image from repeating */
   background-attachment: fixed;
 }
-  
+
+@media (max-width: 800px) {
+    body {
+      background-size: contain;
+    }
+  }
+
   .main-page {
     text-align: center;
     margin-top: 20px;
